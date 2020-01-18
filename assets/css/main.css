@@ -2588,6 +2588,12 @@ input, select, textarea {
 
 /* Image */
 
+	.customBtn {
+		width: 180px;
+		height: 60px;
+		text-align: center;
+	}
+
 	.image {
 		border: 0;
 		display: inline-block;
@@ -2597,6 +2603,7 @@ input, select, textarea {
 		.image img {
 			display: block;
 		}
+
 
 		.image.left, .image.right {
 			max-width: 40%;
@@ -2621,7 +2628,9 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			margin: 2.5rem 0;
-			width: 100%;
+			align-self: center;
+			height: 250;
+			width: 125;
 		}
 
 			.image.fit:first-child {
@@ -3285,7 +3294,7 @@ input, select, textarea {
 
 	#intro {
 		color: #ffffff;
-		padding: 8rem 4rem 6rem 4rem ;
+		padding: 2rem 4rem 6rem 4rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3315,6 +3324,13 @@ input, select, textarea {
 
 		#intro input, #intro select, #intro textarea {
 			color: #ffffff;
+		}
+
+		#intro img {
+			border-radius: 50%;
+			height: 200px;
+			width: 200px;
+			border: 1px solid white;
 		}
 
 		#intro a {
