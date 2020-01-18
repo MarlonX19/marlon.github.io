@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
@@ -18,15 +13,16 @@
 </head>
 
 <body class="is-preload">
-
 	<!-- Wrapper -->
 	<div id="wrapper" class="fade-in">
-
+		
+	<a id='portuguese' href="#port" data-reload><img class="langs" src="images/brflag.png" /></a>
+	<a id='english' href="#eng" data-reload ><img class="langs" src="images/usflag.png" /></a>
 		<!-- Intro -->
 		<div id="intro">
 			<img src="images/perfil.png" />
 			<h2>Marlon Englemam</h2>
-			<p>Desenvolvedor React Native, palestrante, entusiasta cypherpunk e defensor do open source</p>
+			<p id='welcome'>Desenvolvedor React Native, palestrante, entusiasta cypherpunk e defensor do open source</p>
 			<ul class="actions">
 				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 			</ul>
@@ -34,7 +30,7 @@
 
 		<!-- Header -->
 		<header id="header">
-			<a href="index.html" class="logo">Um pouco do que faço</a>
+			<a id="getToKnow" href="index.html" class="logo">Um pouco do que faço</a>
 		</header>
 
 		<!-- Nav -->
@@ -56,8 +52,8 @@
 			<!-- Featured Post -->
 			<article class="post featured">
 				<header class="major">
-					<h2>Tecnologias</h2>
-					<p>Abaixo algumas das tecnologias com as quais mais tenho contato. <br>
+					<h2 id='techs'>Tecnologias</h2>
+					<p id='usedTechs' >Abaixo algumas das tecnologias com as quais mais tenho contato. <br>
 						Confesso que a paixão da vez é React Native e mesmo toda a stack Node.</p>
 				</header>
 				<img class="image main" src="images/techs.png" alt="" />
@@ -100,12 +96,12 @@
 							<span class="sr-only">Next</span>
 						</a>
 					</div>
-					<p>Aplicativo de compartilhamento de fotos, clone do Instagram.</p>
-					<h5>Tecnologias usadas: react native, react hooks, firebase</h5>
+					<p id="pickyshareDesc" >Aplicativo de compartilhamento de fotos, clone do Instagram.</p>
+					<h5 id="pickyshareTools">Tecnologias usadas: react native, react hooks, firebase</h5>
 					<a href="#">
 						<figure>
 							<img class="customBtn" src="images/googleplay.png" />
-							<figcaption>disponível para teste</figcaption>
+							<figcaption id="pickyshareAvailable">disponível para teste</figcaption>
 						</figure>
 					</a>
 				</article>
@@ -144,12 +140,12 @@
 							<span class="sr-only">Next</span>
 						</a>
 					</div>
-					<p>Aplicativo de informações do clima e tempo nas diversas regiões pesquisadas</p>
-					<h5>Tecnologias usadas: react native, axios</h5>
+					<p id="climatempoDesc">Aplicativo de informações do clima e tempo nas diversas regiões pesquisadas</p>
+					<h5 id="climatempoTools">Tecnologias usadas: react native, axios</h5>
 					<a target="_BLANK" href="https://play.google.com/store/apps/details?id=com.weatherapptempoeclima">
 						<figure>
 							<img class="customBtn" src="images/googleplay.png" />
-							<figcaption>disponível para teste</figcaption>
+							<figcaption id="climatempoAvailable">disponível para teste</figcaption>
 						</figure>
 					</a>
 				</article>
@@ -158,7 +154,7 @@
 			<!-- Footer -->
 			<footer>
 				<div class="pagination">
-					<h2>Me manda um Olá mundo</h2>
+					<h2 id="sayHi">Me manda um Olá mundo</h2>
 				</div>
 			</footer>
 
@@ -166,30 +162,9 @@
 
 		<!-- Footer -->
 		<footer id="footer">
-			<section>
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field">
-							<label for="name">Nome</label>
-							<input type="text" name="name" id="name" />
-						</div>
-						<div class="field">
-							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">Mensagem</label>
-							<textarea name="message" id="message" rows="3"></textarea>
-						</div>
-					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Enviar mensagem" /></li>
-					</ul>
-				</form>
-			</section>
 			<section class="split contact">
 				<section class="alt">
-					<h3>Localidade</h3>
+					<h3 id="basedIn">Localidade</h3>
 					<p>Araras - SP</p>
 				</section>
 				<section>
@@ -221,6 +196,7 @@
 	</div>
 
 	<!-- Scripts -->
+
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -239,6 +215,89 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
+
+
+		<script>
+	
+			// Language translations
+			var language = {
+				port: {
+					welcome: 'Desenvolvedor React Native, palestrante, entusiasta cypherpunk e defensor do open source',
+					techs: 'Tecnologias',
+					usedTechs: 'Abaixo algumas das tecnologias com as quais mais tenho contato. Confesso que a paixão da vez é React Native e mesmo toda a stack Node.',
+					pickyshareDesc: 'Aplicativo de compartilhamento de fotos, clone do Instagram.',
+					pickyshareTools: 'Tecnologias usadas: react native, react hooks, firebase',
+					pickyshareAvailable: 'Disponível para teste',
+
+					climatempoDesc: 'Aplicativo de informações do clima e tempo nas diversas regiões pesquisadas',
+					climatempoTools: 'Tecnologias usadas: react native, axios',
+					climatempoAvailable: 'Disponível para teste',
+
+
+					sayHi: 'Me manda um Olá Mundo',
+					basedIn: 'Localidade',
+					getToKnow: 'Um pouco do que faço'
+				},
+	
+				eng: {
+					welcome: 'React Native developer, lecturer, cypherpunk enthusiastic and open-source fan',
+					techs: 'Technologies',
+					usedTechs: 'Below you can take a look at a few of the tools and technologies I feel confident using. I also must admit React Native is my current passion',
+					pickyshareDesc: 'Photo-sharing app, also known as Instagram clone. Publish and comment',
+					pickyshareTools: 'Built using: react native, react hooks, firebase',
+					pickyshareAvailable: 'Available for tests',
+
+					climatempoDesc: "Weather app showing info based on user's location or on their search",
+					climatempoTools: 'Built using: react native, axios',
+					climatempoAvailable: 'Available for tests',
+
+					sayHi: 'Send me a Hello World',
+					basedIn: 'Based in',
+					getToKnow: "A bit of what I've coded"
+				}
+			};
+	
+			//Checking all languages and making webpage reload on change
+			$(function(){
+				$('#english').click(function(){
+					$('#welcome').text(language.eng.welcome)
+					$('#techs').text(language.eng.techs)
+					$('#usedTechs').text(language.eng.usedTechs)
+
+					$('#pickyshareDesc').text(language.eng.pickyshareDesc)
+					$('#pickyshareTools').text(language.eng.pickyshareTools)
+					$('#pickyshareAvailable').text(language.eng.pickyshareAvailable)
+
+					$('#climatempoDesc').text(language.eng.climatempoDesc)
+					$('#climatempoTools').text(language.eng.climatempoTools)
+					$('#climatempoAvailable').text(language.eng.climatempoAvailable)
+
+					$('#getToKnow').text(language.eng.getToKnow)
+					$('#sayHi').text(language.eng.sayHi)
+					$('#basedIn').text(language.eng.basedIn)
+				})
+			})
+
+			$(function(){
+				$('#portuguese').click(function(){
+					$('#welcome').text(language.port.welcome)
+					$('#techs').text(language.port.techs)
+					$('#usedTechs').text(language.port.usedTechs)
+
+					$('#pickyshareDesc').text(language.port.pickyshareDesc)
+					$('#pickyshareTools').text(language.port.pickyshareTools)
+					$('#pickyshareAvailable').text(language.port.pickyshareAvailable)
+
+					$('#climatempoDesc').text(language.port.climatempoDesc)
+					$('#climatempoTools').text(language.port.climatempoTools)
+					$('#climatempoAvailable').text(language.port.climatempoAvailable)
+
+					$('#getToKnow').text(language.port.getToKnow)
+					$('#sayHi').text(language.port.sayHi)
+					$('#basedIn').text(language.port.basedIn)
+				})
+			})
+		</script>
 
 </body>
 
