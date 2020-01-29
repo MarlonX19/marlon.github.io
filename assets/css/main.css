@@ -2607,6 +2607,12 @@ input, select, textarea {
 		position: relative;
 	}
 
+	img#devIcon {
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+	}
+
 		.image img {
 			display: block;
 		}
