@@ -306,6 +306,55 @@
 				</article>
 
 
+				<article>
+					<header>
+						<h2>Be the hero</h2>
+					</header>
+					<div id="hero" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="images/hero/mac.png" alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="images/hero/mobile1.png" alt="fourth slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="images/hero/mobile2.png" alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="images/hero/desktop1.png" alt="Third slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="images/hero/desktop2.png" alt="fourth slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="images/hero/desktop3.png" alt="fourth slide">
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#hero" role="button" data-slide="prev">
+							<span style="background-color: #ddd; border-radius: 50%;" class="carousel-control-prev-icon"
+								aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#hero" role="button" data-slide="next">
+							<span style="background-color: #ddd; border-radius: 50%;" class="carousel-control-next-icon"
+								aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+					<p id="heroDesc">
+						Sistema para ONG de proteção e cuidados a animais abandonados, em versão web e mobile
+					</p>
+					<h5 id="heroTools">Tecnologias usadas: SQLITE, ReactJS, React Native, NodeJS</h5>
+					<a target="_BLANK" href="https://clone-hero-x19.herokuapp.com">
+						<figure>
+							<img class="customBtn" src="images/externalIcon.svg" />
+							<figcaption id="heroAvailable">Visitar site</figcaption>
+						</figure>
+					</a>
+				</article>
+
+
 
 			</section>
 
@@ -327,12 +376,13 @@
 				</section>
 				<section>
 					<h3>Whatsapp</h3>
-					<p><a target="_blank" href="https://api.whatsapp.com/send?phone=5519999861751">(19) 99986 1751</a></p>
+					<p><a target="_blank" href="https://api.whatsapp.com/send?phone=5519999861751">(19) 99986 1751</a>
+					</p>
 				</section>
 				<section>
 					<h3>Email</h3>
 					<p><a
-						href="mailto:marlon.englemam@gmail.com?subject=Contato do Portfólio">marlon.englemam@gmail.com</a>
+							href="mailto:marlon.englemam@gmail.com?subject=Contato do Portfólio">marlon.englemam@gmail.com</a>
 					</p>
 				</section>
 				<section>
@@ -407,6 +457,10 @@
 				netflixTools: 'Tecnologias usadas: ReactJS, styled-components, CSS3',
 				netflixAvailable: 'Visitar site',
 
+				heroDesc: 'Sistema para ONG de proteção e cuidados a animais abandonados, em versão web e mobile',
+				heroTools: 'Tecnologias usadas: SQLITE, ReactJS, React Native, NodeJS',
+				heroAvailable: 'Visitar site',
+
 				sayHi: 'Me manda um Olá Mundo',
 				basedIn: 'Localidade',
 				getToKnow: 'Um pouco do que faço'
@@ -435,6 +489,10 @@
 				netflixDesc: "Clone of Netflix's home page",
 				netflixTools: 'Built using: ReactJS, styled-components, CSS3',
 				netflixAvailable: 'Visit website',
+
+				heroDesc: 'Web and mobile app for animal protection NGOs',
+				heroTools: 'Built using: SQLITE, ReactJS, React Native, NodeJS',
+				heroAvailable: 'Visit website',
 
 				sayHi: 'Send me a Hello World',
 				basedIn: 'Based in',
@@ -469,6 +527,10 @@
 				$('#netflixTools').text(language.eng.netflixTools)
 				$('#netflixAvailable').text(language.eng.netflixAvailable)
 
+				$('#heroDesc').text(language.eng.heroDesc)
+				$('#heroTools').text(language.eng.heroTools)
+				$('#heroAvailable').text(language.eng.heroAvailable)
+
 				$('#getToKnow').text(language.eng.getToKnow)
 				$('#sayHi').text(language.eng.sayHi)
 				$('#basedIn').text(language.eng.basedIn)
@@ -500,6 +562,10 @@
 				$('#netflixDesc').text(language.port.netflixDesc)
 				$('#netflixTools').text(language.port.netflixTools)
 				$('#netflixAvailable').text(language.port.netflixAvailable)
+
+				$('#heroDesc').text(language.port.heroDesc)
+				$('#heroTools').text(language.port.heroTools)
+				$('#heroAvailable').text(language.port.heroAvailable)
 
 				$('#getToKnow').text(language.port.getToKnow)
 				$('#sayHi').text(language.port.sayHi)
